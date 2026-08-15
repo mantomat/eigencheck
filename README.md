@@ -37,7 +37,7 @@ $$
 To compute the algebraic multiplicity of an eigenvalue, we can use the convergence properties of the **Newton method**. It is known that the Newton method, when approximating a root of order $m$, converges (locally) with linear speed and an asymptotic constant equal to $(m - 1)/m$. That is,
 
 $$
-\lim_{k \to +\infty} \frac{|s_k|}{|s_{k+1}|} = \frac{m - 1}{m},
+\lim_{k \to +\infty} \frac{|s_{k+1}|}{|s_{k}|} = \frac{m - 1}{m},
 $$
 
 where $s_k$ is the step size. When sufficiently close to the root, we have:
