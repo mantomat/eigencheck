@@ -6,15 +6,15 @@ Let $A$ be a real $n \times n$ matrix. The eigenvalues of $A$ have two character
 
 - $\lambda \in \mathbb{C}$ is an eigenvalue of $A$ if the system $(A - \lambda I)x = 0$ has non-zero solutions. In this case, the dimension of the solution space is called the **geometric multiplicity** of the eigenvalue $\lambda$. We denote this quantity as $\text{mult}_{\text{geo}}(\lambda)$:
 
-  $$
-  \text{mult}_{\text{geo}}(\lambda) := n - \text{rk}(A - \lambda I).
-  $$
+$$
+\text{mult}_{\text{geo}}(\lambda) := n - \text{rk}(A - \lambda I).
+$$
 
 - $\lambda \in \mathbb{C}$ is an eigenvalue of $A$ if $\lambda$ is a root of the equation $f_A(x) = 0$, where $f_A(x) := \text{det}(A - xI)$. In this case, the root's multiplicity is called the **algebraic multiplicity** of $\lambda$. We denote this as $\text{mult}_{\text{alg}}(\lambda)$:
 
-  $$
-  \text{mult}_{\text{alg}}(\lambda) := \{m \in \mathbb{N} : 0 = f_A(\lambda) = f_A'(\lambda) = \dots = f_A^{(m-1)}(\lambda), \text{but } f_A^{(m)}(\lambda) \neq 0\}.
-  $$
+$$
+\text{mult}_{\text{alg}}(\lambda) := \{m \in \mathbb{N} : 0 = f_A(\lambda) = f_A'(\lambda) = \dots = f_A^{(m-1)}(\lambda), \text{but } f_A^{(m)}(\lambda) \neq 0\}.
+$$
 
 A matrix is diagonalizable (i.e., $A = P^{-1} \Lambda P$, where $P$ is an invertible matrix and $\Lambda$ is a diagonal matrix with eigenvalues on the diagonal) if and only if for every eigenvalue $\lambda$:
 
